@@ -1,0 +1,15 @@
+<div>
+ <%= link_to category_records_path(@category) do%>
+  <span>&#8701;</span>
+  <%end%>
+</div>
+
+<h1>Create New record</h1>
+
+<%= render "form", record: @record %>
+
+<br>
+
+<div>
+  <%= link_to "Back to records", category_records_path %>
+</div>

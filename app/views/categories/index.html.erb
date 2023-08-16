@@ -1,0 +1,17 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Categories</h1>
+
+<div id="categories">
+  <% if @categories.length == 0 %>
+    <p> There are no categories yet</p>
+  <% else %>
+    <% @categories.each do |category| %>
+      <%= link_to category_records_path(category) do %>
+        <%= render category %>
+      <% end %>
+    <% end %>
+  <% end %>
+</div>
+
+<%= link_to "New category", new_category_path %>

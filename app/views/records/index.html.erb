@@ -1,0 +1,21 @@
+<div>
+ <%= link_to categories_path do%>
+   <span>&#8701;</span>
+   <%end%>
+</div>
+<h1>Transactions for <span><%=@category.name%></h1>
+    <span class="hamburger-icon">&#9776;</span>
+
+ <div>TOTAL: $<%=@category.total_amount%></div>
+
+<div id="records">
+<%if @records.length == 0%>
+  <p>no transaction yet,kindly add one</p>
+<%else%>
+  <% @records.each do |record| %>
+    <%= render record %>
+    <%end%>
+  <% end %>
+</div>
+
+<%= link_to "New record", new_category_record_path(@category)%>
