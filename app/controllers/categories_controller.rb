@@ -21,11 +21,18 @@ class CategoriesController < ApplicationController
     @category = Category.new(category_params)
     @category.user = current_user
 
-    respond_to do |format|
-      if @category.save
-        format.html { redirect_to category_path(@category), notice: "Category was successfully created." }
+    if @category.name.blank? || @category.icon.blank?
+      respond_to do |format|
+        format.html { render :new, status: :unprocessable_entity, alert: "Kindly fill out the form." }
+        format.json { render json: { alert: "Kindly fill out the form." }, status: :unprocessable_entity }
+      end
+    elsif @category.save
+      respond_to do |format|
+        format.html { redirect_to categories_path, notice: "Category was successfully created." }
         format.json { render :show, status: :created, location: @category }
-      else
+      end
+    else
+      respond_to do |format|
         format.html { render :new, status: :unprocessable_entity }
         format.json { render json: @category.errors, status: :unprocessable_entity }
       end

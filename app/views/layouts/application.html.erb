@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>BudgetManager</title>
+    <title>SpendSmartly</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +11,15 @@
   </head>
 
   <body>
+    <%
+=begin%>
+ <%= render partial: "shared/navigation", locals: { sign_out_path: destroy_user_session_path } %> 
+<%
+=end%>
+  <div>
+    <p class="notice"><%= notice %></p>
+    <p class="alert red_col"><%= alert %></p>
+  </div>
     <%= yield %>
   </body>
 </html>

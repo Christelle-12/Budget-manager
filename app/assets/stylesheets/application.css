@@ -1,15 +1,268 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+/* navigation style */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(248, 243, 234);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: row;
+    background-color: #3778c2;
+    padding: 25px 10px 15px;
+}
+.navigation h1{
+    background-color: #3778c2;
+    color: #fff;
+}
+
+.sign-out-butt{
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 0.3rem;
+    color: whitesmoke;
+    background-color: #3778c2;
+    font-size: 1.2rem;
+}
+.sign-out-butt:hover {
+    color: red;
+}
+.hamburger {
+    color: white;
+    background-color: #3778c2;
+    font-size: 2rem;
+}
+
+/* home */
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.login, .signup {
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #76e967;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.login:hover, .signup:hover {
+    background-color: #f05f5f;
+    transform: scale(1.05);
+}
+/*login page*/
+/* Styling for the login form */
+.login-cont {
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.login-cont h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.field {
+    margin-bottom: 1.5rem;
+}
+
+.field label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.field input[type="email"],
+.field input[type="password"] {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.field input[type="email"]:focus,
+.field input[type="password"]:focus {
+    border-color: #6193cc;
+}
+
+.actions {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.actions input[type="submit"] {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    background-color: #f36f6f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.actions input[type="submit"]:hover {
+    background-color: #f05f5f;
+    transform: scale(1.05);
+}
+.field input[type="text"][name="user[full_name]"] {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.field input[type="text"][name="user[full_name]"]:focus {
+    border-color: #6193cc;
+}
+
+/* Categories index page */
+.categories_sect {
+    height: 100vh;
+    position: relative;
+}
+.cat_page {
+    display: flex;
+    flex-direction: column;
+}
+.cat_link_cont {
+    background-color: #76e967;
+    border: 1px solid black;
+    padding: 0.6rem;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.cat_link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    background-color: #76e967;
+
+}
+
+.cat_link:hover {
+    background-color: aliceblue;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.cat_icon {
+    box-sizing: border-box;
+    width: 30px; 
+    height: 30px; 
+}
+.inner{
+    padding: 1rem;
+    border: 1px solid #fff;
+    background-color: #76e967;
+}
+
+/* Category container */
+.category-par {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.cat_wrap {
+    display: flex;
+    gap:1.2rem;
+    background-color: #fff;
+
+}
+.cat_name {
+    text-decoration: none !important;
+    background-color: #fff;
+    color: #333; 
+
+  }
+.icon_container {
+  flex-shrink: 0; 
+  background-color: #fff;
+
+}
+
+.icon_container img {
+  width: 2.5rem; 
+  height: 2.5rem; 
+  vertical-align: middle;
+}
+.category-par > div:last-child {
+  font-weight: bold;
+}
+
+.category-par > div:last-child {
+  margin-left: auto; 
+}
+.back_btn{
+    background-color: #3778c2;
+}
+.categories_new {
+    display: flex;
+    flex-direction: column;
+}
+.nav_title {
+    font-size: 1.3rem;
+}
+.form-newcat {
+    margin: 1rem;
+    display: flex;
+}
+.form-newcat input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-newcat label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.form-newcat input[type="submit"]{
+    padding: 0.5rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+
+}
+.form-newcat input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.no-categories {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    padding: 1.5rem;
+    margin-top: 1rem;
+}

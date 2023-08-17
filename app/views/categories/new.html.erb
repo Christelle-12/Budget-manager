@@ -1,9 +1,16 @@
-<h1>Create New category</h1>
+<section class="categories_new" >
 
-<%= render "form", category: @category %>
+  <div class="navigation">
+    <%= link_to categories_path, class: "hamburger-back" do %>
+    <div>
+     <span class="hamburger">&#10092;</span>
+    </div>
+    <% end %>
+     <h1 class="nav_title">Create new Category</h1>
+    <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "sign-out-butt" %>
+  </div>
+  <div>
+     <%= render "form", category: @category %>
+  </div> 
 
-<br>
-
-<div>
-  <%= link_to "Back to categories", categories_path %>
-</div>
+</section>

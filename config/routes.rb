@@ -11,4 +11,7 @@ Rails.application.routes.draw do
   resources :categories, only: [:index, :new, :create, :destroy] do
     resources :records, only: [:index, :new, :create, :destroy]
   end
+  devise_scope :user do
+    get '/users/sign_out' => 'devise/sessions#destroy'
+  end
 end
