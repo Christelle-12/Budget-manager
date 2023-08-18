@@ -4,10 +4,10 @@ class Category < ApplicationRecord
   has_many :records, through: :categorizations
 
   def total_amount
-    sum = 0
-    records.each do |record|
-      sum += record.amount
-    end
-    sum
+    records.sum(:amount)
   end
+  
+
+  validates :name, presence: true
+
 end
