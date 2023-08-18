@@ -30,7 +30,7 @@ RSpec.describe Record, type: :model do
     it 'requires amount to be greater than or equal to 0' do
       record = described_class.new(amount: -1)
       expect(record).not_to be_valid
-      expect(record.errors[:amount]).to include("must be greater than or equal to 0")
+      expect(record.errors[:amount]).to include('must be greater than or equal to 0')
     end
   end
 end

@@ -6,8 +6,6 @@ class Category < ApplicationRecord
   def total_amount
     records.sum(:amount)
   end
-  
 
   validates :name, presence: true
-
 end

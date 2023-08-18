@@ -3,7 +3,8 @@ require 'rails_helper'
 RSpec.describe User, type: :model do
   context 'validations' do
     it 'is valid with valid attributes' do
-      user = User.new(full_name: 'John Doe', email: 'test@example.com', password: 'password', password_confirmation: 'password')
+      user = User.new(full_name: 'John Doe', email: 'test@example.com', password: 'password',
+                      password_confirmation: 'password')
       expect(user).to be_valid
     end
 
@@ -11,7 +12,6 @@ RSpec.describe User, type: :model do
       user = User.new(email: 'test@example.com', password: 'password', password_confirmation: 'password')
       expect(user).not_to be_valid
     end
-
   end
 
   context 'associations' do
