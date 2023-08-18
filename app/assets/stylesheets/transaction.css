@@ -1,0 +1,22 @@
+.nw-transact-but{
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 0.5rem ;
+    width: 45%;
+}
+.back-icon {
+    color: #fff;
+}
+.field input[type="text"] {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+}
+.styled-button {
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 0.5rem;
+    width: 45%;
+}

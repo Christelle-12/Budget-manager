@@ -7,15 +7,11 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag 'transaction', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
-    <%
-=begin%>
- <%= render partial: "shared/navigation", locals: { sign_out_path: destroy_user_session_path } %> 
-<%
-=end%>
   <div>
     <p class="notice"><%= notice %></p>
     <p class="alert red_col"><%= alert %></p>
