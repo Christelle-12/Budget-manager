@@ -8,12 +8,8 @@
     <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "sign-out-butt" %>
   </div>
 
-<h1> New transaction</h1>
-
-<%= render "form", record: @record %>
-
+<h1 class="nw-transaction"> New transaction</h1>
 <br>
-
-<div>
-  <%= link_to "Back to transactions", category_records_path %>
+<div class="nw-transaction">
+  <%= render "form", record: @record %>
 </div>

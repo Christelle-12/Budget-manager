@@ -2,7 +2,13 @@
     border-radius: 5px;
     border: 1px solid black;
     padding: 0.5rem ;
-    width: 45%;
+    margin-left: 0.5rem;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    background-color: #76e967;
+    text-align: center;
+
 }
 .back-icon {
     color: #fff;
@@ -20,3 +26,39 @@
     padding: 0.5rem;
     width: 45%;
 }
+.nw-transaction {
+    padding-left: 0.5rem;
+    text-decoration: none;
+}
+.record-card{
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin:1rem 0.5rem;
+    padding: 0.5rem;
+}
+.transact-title {
+    margin: 0.5rem;
+}
+.total {
+    margin: 0.5rem;
+}
+.nw-transact-but a {
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+.nw-transact-but a:hover {
+    background-color: rgb(155, 65, 65);
+}
+.trans-index {
+    height: 100vh;
+    position: relative;
+}
+.record-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
+
+
