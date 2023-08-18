@@ -2,7 +2,6 @@
   border-radius: 5px;
   border: 1px solid black;
   padding: 0.5rem;
-  margin-left: 0.5rem;
   width: 100%;
   bottom: 0;
   position: absolute;
@@ -12,6 +11,7 @@
 
 .back-icon {
   color: #fff;
+  text-decoration: none;
 }
 
 .field input[type="text"] {
@@ -55,6 +55,27 @@
   transition: background-color 0.3s ease;
 }
 
+.log-but a {
+  width: 30%;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  background-color: #6fcef3;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.bot-signup a {
+  text-decoration: none;
+}
+
+.bot-forgot a {
+  text-decoration: none;
+}
+
 .nw-transact-but a:hover {
   background-color: rgb(155, 65, 65);
 }
@@ -67,4 +88,28 @@
 .record-name {
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+.login_container {
+  display: flex;
+  align-self: flex-start;
+  margin-top: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+.log-but a:hover {
+  background-color: #76e967;
+}
+
+.bot-signup a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+.buttons-sign-forgot {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  padding-left: 0.5rem;
 }

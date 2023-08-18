@@ -23,10 +23,13 @@
 .navigation {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   flex-direction: row;
   background-color: #3778c2;
-  padding: 25px 10px 15px;
+  height: 5rem;
+  padding-inline: 0.5rem;
+
+  /* padding: 25px 10px 15px; */
 }
 
 .navigation h1 {
@@ -51,6 +54,10 @@
   color: white;
   background-color: #3778c2;
   font-size: 2rem;
+}
+
+.hamburger a {
+  text-decoration: none;
 }
 
 /* home */
@@ -103,7 +110,6 @@
   margin: 0 auto;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .new_user {
@@ -153,6 +159,9 @@
 }
 
 .actions input[type="submit"] {
+  display: flex;
+  align-self: flex-start;
+  width: 30%;
   padding: 0.75rem 2rem;
   font-size: 1rem;
   background-color: #f36f6f;
@@ -234,20 +243,30 @@
   border: 1px solid #ccc;
   background-color: #fff;
   padding: 10px;
-  margin: 10px 0;
+  height: 5rem;
+  margin-bottom: 0.5rem;
+  align-items: center;
   border-radius: 5px;
 }
 
 .cat_wrap {
   display: flex;
+  align-items: center;
   gap: 1.2rem;
   background-color: #fff;
 }
 
 .cat_name {
-  text-decoration: none !important;
   background-color: #fff;
   color: #333;
+}
+
+.cat_name a {
+  text-decoration: none;
+}
+
+.cat_name a:hover {
+  text-decoration: underline;
 }
 
 .icon_container {
@@ -256,8 +275,9 @@
 }
 
 .icon_container img {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 4rem;
+
+  /* height: 2.5rem; */
   vertical-align: middle;
 }
 

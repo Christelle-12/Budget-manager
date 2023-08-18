@@ -10,9 +10,11 @@
       <p class="no-categories"> There are no categories yet,,,,!create one</p>
     <% else %>
       <% @categories.each do |category| %>
-        <%= link_to category_records_path(category) do %>
-          <%= render category %>
+      <div class="cat_name">
+         <%= link_to category_records_path(category) do %>
+         <%= render category %>
         <% end %>
+      </div>
       <% end %>
     <% end %>
   </div>
