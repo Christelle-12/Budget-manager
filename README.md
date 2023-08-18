@@ -136,7 +136,7 @@ To run tests, run the following command:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page]().
+Feel free to check the [issues page](https://github.com/Christelle-12/Budget-manager/issues).
 
 <p align="right"><a href="#readme-top">Back to top</a></p>
 
