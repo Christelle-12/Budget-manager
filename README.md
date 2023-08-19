@@ -14,8 +14,8 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-    - [🚀 Live Demo](#href="https://spend-smartly.onrender.com/.)
-    - [Video]()
+    - [🚀Live Demo](#href="https://spend-smartly.onrender.com/.)
+    - [Video](#href="https://www.loom.com/share/8747306427bb4d94ab932f2dd7c88fbc?sid=cf1b51e3-8804-427e-8889-056a783e906f")
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -70,7 +70,7 @@ the site is deployed below:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Video 
-  <a href="">Demonstration video</a>
+  <a href="https://www.loom.com/share/8747306427bb4d94ab932f2dd7c88fbc?sid=cf1b51e3-8804-427e-8889-056a783e906f">Demonstration video</a>
 
 <!-- Features -->
 
