@@ -1,16 +1,16 @@
 require 'rails_helper'
 
 RSpec.describe CategoriesController, type: :controller do
-  let(:user) { create(:user, full_name: 'John Doe') } # You need to define a user factory
+  let(:user) { create(:user, full_name: 'John Doe') } 
   let(:category) { create(:category, user:) }
 
   before do
-    sign_in user # Assuming you have authentication set up with Devise or a similar gem
+    sign_in user 
   end
 
   describe 'GET #index' do
     before do
-      sign_in user # Now you can use the sign_in method
+      sign_in user 
     end
     it 'returns a successful response' do
       get :index

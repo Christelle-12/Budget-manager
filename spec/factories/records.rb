@@ -1,4 +1,3 @@
-# spec/factories/records.rb
 FactoryBot.define do
   factory :record do
     name { Faker::Lorem.sentence }
