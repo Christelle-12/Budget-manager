@@ -11,8 +11,7 @@
   flex-direction: column-reverse;
   align-items: baseline;
   background-color: #3778c2;
-
-  /* padding: 1rem 0.5rem; */
+  padding: 1rem 0.5rem;
 }
 
 .shared_nav p {
@@ -54,8 +53,8 @@
 .hamburger {
   color: white;
   background-color: #3778c2;
-  font-size: 5rem;
   text-decoration: none;
+  font-size: 3rem;
 }
 
 .hamburger a {
@@ -167,7 +166,8 @@
 
 .actions {
   text-align: center;
-  margin-top: 1.5rem;
+
+  /* margin-top: 1.5rem; */
 }
 
 .form-newcat input[type="submit"] {
@@ -175,25 +175,6 @@
   border-radius: 8px;
   transition: background-color 0.3s ease;
 }
-
-/* .actions input[type="submit"] {
-  display: flex;
-  align-self: flex-start;
-  width: 30%;
-  padding: 0.75rem 2rem;
-  font-size: 1rem;
-  background-color: #f36f6f;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
-} */
-
-/* .actions input[type="submit"]:hover {
-  background-color: #f05f5f;
-  transform: scale(1.05);
-} */
 
 .field input[type="text"][name="user[full_name]"] {
   padding: 0.75rem;
