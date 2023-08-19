@@ -114,3 +114,28 @@
   margin-top: 1rem;
   padding-left: 0.5rem;
 }
+
+.actions {
+  position: absolute;
+  top: calc((150vh* 0.5) * 0.03);
+  right: 0.6rem;
+  background: transparent;
+  padding: 0.5rem;
+}
+
+.actions input[type="submit"] {
+  font-size: 1.5rem;
+  border: none;
+  background-color: #3778c2;
+  color: #e9e8e8;
+}
+
+.column {
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+}
+
+.column p {
+  padding-left: 4.5rem;
+}

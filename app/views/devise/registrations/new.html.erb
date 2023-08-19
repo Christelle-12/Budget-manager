@@ -1,11 +1,9 @@
 <div class="signup-cont">
   <div class="shared_nav">
-  <a class="hamburger" href="http://[::1]:3000/">&#10092;</a>
-  <p> Register</p>
-  <%= link_to "Next", categories_path, class: "sign-out-butt" %>
-</div>
-
-  <h2>Sign up</h2>
+ <div class="column">
+     <a class="hamburger" href="http://[::1]:3000/">&#8592;</a>
+     <p>Register</p>
+  </div></div>
 
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
     <%= render "devise/shared/error_messages", resource: resource %>
