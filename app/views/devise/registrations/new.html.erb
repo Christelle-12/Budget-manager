@@ -1,0 +1,33 @@
+<div class="signup-cont">
+  <div class="shared_nav">
+ <div class="column">
+     <a class="hamburger" href="http://[::1]:3000/">&#8592;</a>
+     <p>Register</p>
+  </div></div>
+
+  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+    <div class="field">
+      <%= f.text_field :full_name, autofocus: true, placeholder: "Enter full name" %>
+    </div>
+
+    <div class="field">
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder:"Add your email address" %>
+    </div>
+
+    <div class="field">
+      <% if @minimum_password_length %>
+        <em>(<%= @minimum_password_length %> characters minimum)</em>
+      <% end %><br />
+      <%= f.password_field :password, autocomplete: "new-password", placeholder:"Enter your password" %>
+    </div>
+
+    <div class="field">
+      <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder:"confirm your password"  %>
+    </div>
+    <div class="actions">
+      <%= f.submit "Sign up" %>
+    </div>
+  <% end %>
+</div>

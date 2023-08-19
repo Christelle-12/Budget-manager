@@ -1,0 +1,36 @@
+<section class="trans-index">
+<div class="navigation">
+ <div class="hamburger">
+   <%= link_to categories_path do%>
+   <span class="back-icon">&#8592;</span>
+   <%end%>
+ </div>
+  <h1>Transactions</h1>
+  <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "sign-out-butt" %>
+</div>
+<div class="transact-title"> 
+  <h1>Transactions for <span><%=@category.name%></h1>
+</div>
+<div class="total">TOTAL: $<%=@category.total_amount%></div>
+
+<div id="records">
+  <%if @records.length == 0%>
+    <p class="record-card">no transaction yet,kindly add one</p>
+  <%else%>
+  <% @records.each do |record| %>
+   <div class="record-card">
+     <%= render record %>
+   </div>
+    <%end%>
+  <% end %>
+</div>
+<div class="nw-transact-but">
+ <%= link_to "Add New transaction", new_category_record_path(@category)%>
+</div>
+
+
+</section>
+
+
+
+ 

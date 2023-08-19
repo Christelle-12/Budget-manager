@@ -1,0 +1,29 @@
+<div class="login-cont">
+  <div class="shared_nav">
+  <div class="column">
+     <a class="hamburger" href="http://[::1]:3000/">&#8592;</a>
+     <p>login</p>
+  </div>
+  </div>
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <div class="field">
+      <%= f.email_field :email, autofocus: true, autocomplete: "email",placeholder:"Enter Email" %>
+    </div>
+
+    <div class="field">
+      <%= f.password_field :password, autocomplete: "current-password", placeholder:"Enter password" %>
+    </div>
+
+    <% if devise_mapping.rememberable? %>
+      <div class="field">
+        <%= f.check_box :remember_me %>
+        <%= f.label :remember_me %>
+      </div>
+    <% end %>
+
+    <div class="actions">
+      <%= f.submit "Log in" %>
+    </div>
+  <% end %>
+  <%= render 'devise/shared/links'%>
+</div>

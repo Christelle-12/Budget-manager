@@ -1,0 +1,15 @@
+ <div class="navigation">
+   <%= link_to category_records_path(@category) do%>
+    <div>
+     <span class="hamburgernw">&#8592;</span>
+    </div>
+    <% end %>
+     <h1 class="nav_title">Create new transaction</h1>
+    <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "sign-out-butt" %>
+  </div>
+
+<h1 class="nw-transaction"> New transaction</h1>
+<br>
+<div class="nw-transaction">
+  <%= render "form", record: @record %>
+</div>

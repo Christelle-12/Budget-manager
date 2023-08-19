@@ -1,0 +1,29 @@
+<section class="categories_sect">
+<div class="navigation">
+  <span class="cat_hamburger">&#9776;</span>
+   <h1>Categories</h1>
+  <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "sign-out-butt" %>
+</div>   
+    <div class="cat_page">
+  <div id="categories">
+    <% if @categories.length == 0 %>
+      <p class="no-categories"> There are no categories yet,,,,!create one</p>
+    <% else %>
+      <% @categories.each do |category| %>
+      <div class="cat_name">
+         <%= link_to category_records_path(category) do %>
+         <%= render category %>
+        <% end %>
+      </div>
+      <% end %>
+    <% end %>
+  </div>
+  <div class="cat_link_cont">
+  <div class= "inner">
+    <%= link_to "New category", new_category_path, class:"cat_link" %>
+  </div>
+  </div>
+</div>
+
+</section>
+
