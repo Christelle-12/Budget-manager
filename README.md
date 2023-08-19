@@ -14,6 +14,8 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+    - [🚀 Live Demo](#href="https://spend-smartly.onrender.com/.)
+    - [Video]()
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -58,6 +60,17 @@
     <li>PostgreSQL</li>
   </ul>
 </details>
+
+### Deployment
+
+the site is deployed below:
+
+ <a href="https://spend-smartly.onrender.com"> Check out the Live Demo here</a>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Video 
+  <a href="">Demonstration video</a>
 
 <!-- Features -->
 
