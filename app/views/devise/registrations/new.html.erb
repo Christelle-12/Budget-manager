@@ -1,5 +1,9 @@
 <div class="signup-cont">
-  <%= render "shared/navigation" %>
+  <div class="shared_nav">
+  <a class="hamburger" href="http://[::1]:3000/">&#10092;</a>
+  <p> Register</p>
+  <%= link_to "Next", categories_path, class: "sign-out-butt" %>
+</div>
 
   <h2>Sign up</h2>
 
@@ -7,33 +11,25 @@
     <%= render "devise/shared/error_messages", resource: resource %>
 
     <div class="field">
-      <%= f.label :Name %><br />
       <%= f.text_field :full_name, autofocus: true, placeholder: "Enter full name" %>
     </div>
 
     <div class="field">
-      <%= f.label :email %><br />
-      <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder:"Ex:nirere1123@gmail.com" %>
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder:"Add your email address" %>
     </div>
 
     <div class="field">
-      <%= f.label :password %>
       <% if @minimum_password_length %>
         <em>(<%= @minimum_password_length %> characters minimum)</em>
       <% end %><br />
-      <%= f.password_field :password, autocomplete: "new-password" %>
+      <%= f.password_field :password, autocomplete: "new-password", placeholder:"Enter your password" %>
     </div>
 
     <div class="field">
-      <%= f.label :password_confirmation %><br />
-      <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+      <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder:"confirm your password"  %>
     </div>
-
     <div class="actions">
       <%= f.submit "Sign up" %>
     </div>
   <% end %>
-  <div class="login_container">
-    <%= render "devise/shared/links" %>
-  </div>
 </div>
