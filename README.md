@@ -70,7 +70,7 @@ the site is deployed below:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Video 
-  <a href="https://www.loom.com/share/8747306427bb4d94ab932f2dd7c88fbc?sid=cf1b51e3-8804-427e-8889-056a783e906f">Demonstration video</a>
+  <a href="https://www.loom.com/share/f1adda46a0ab4a46aebbbc4dd2053d9a?sid=3e398bc6-3322-4aa7-b923-e0829beab8b0">Demonstration video</a>
 
 <!-- Features -->
 
