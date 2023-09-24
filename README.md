@@ -35,6 +35,23 @@
 
 **Spend smartly App** Your Path to Financial Clarity. Effortlessly manage your finances with a sleek splash screen, intuitive sign-up, and secure login. Explore categories, track transactions, and create a bright financial future. With seamless navigation and smart features like adding new categories and transactions, taking charge of your money has never been more inviting. Tested for quality, built for you – start your financial journey today.
 
+![image](https://github.com/Christelle-12/Budget-manager/assets/105784335/160cf069-4933-4f87-9a66-ce9d00aeed66)
+![image](https://github.com/Christelle-12/Budget-manager/assets/105784335/fad45665-5308-4aac-9d21-8176cf24ae5c)
+![image](https://github.com/Christelle-12/Budget-manager/assets/105784335/cf05849b-dbda-47f4-9245-3149f2cef61d)
+![image](https://github.com/Christelle-12/Budget-manager/assets/105784335/f9157e9b-61c2-49fc-a0f4-81d5ffd58ece)
+![image](https://github.com/Christelle-12/Budget-manager/assets/105784335/c3896f6c-edea-45bd-887e-c125d6d658aa)
+![image](https://github.com/Christelle-12/Budget-manager/assets/105784335/21d04c52-daef-406d-bb12-2b1a1719c05a)
+![image](https://github.com/Christelle-12/Budget-manager/assets/105784335/1d23037b-fc24-4669-86ba-7c8649989d6f)
+![image](https://github.com/Christelle-12/Budget-manager/assets/105784335/e9acf0ef-da90-4cd3-8d37-cb2917b0b630)
+
+
+
+
+
+
+
+
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
